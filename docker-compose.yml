@@ -1,0 +1,32 @@
+services:
+  # Node.js Application
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/todolist
+    volumes:
+      - .:/app
+    networks:
+      - todonet
+
+  # MongoDB Service
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - todonet
+
+# Create a shared network for communication
+networks:
+  todonet:
+
+# Persistent volume for MongoDB data
+volumes:
+  mongo-data:

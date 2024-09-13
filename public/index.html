@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+     <!-- Import Materialize CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+     <!-- Google Icons for buttons -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container z-depth-3 white">
+        <h3>TAMK DEMO APP</h3>
+        <h6>A Simple Full-Stack LIST APP</h6>
+        <!-- Input for Adding New Tasks -->
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="taskInput" type="text" placeholder="Enter a new task">
+                <label for="taskInput">New Task</label>
+            </div>
+            <div class="col s12">
+                <button class="btn waves-effect waves-tamk" onclick="addTask()">Add Task
+                    <i class="material-icons right">add</i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Task List -->
+        <ul id="tasks" class="collection"></ul>
+    </div>
+
+    <!-- Import Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

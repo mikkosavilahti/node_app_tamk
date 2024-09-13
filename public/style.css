@@ -1,0 +1,38 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #4E008E;
+}
+.container {
+    margin-top: 5%;
+    width: 100%;
+    max-width: 600px;
+}
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+.input-field {
+    margin-top: 20px;
+}
+#tasks {
+    margin-top: 40px;
+}
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-item i {
+    cursor: pointer;
+}
+.btn, .btn:hover, .btn:active{
+        background-color: rgb(78, 0, 142);
+    }
+
+.waves-effect.waves-tamk{
+        background-color: rgb(78, 0, 142, 0.65);
+    }
