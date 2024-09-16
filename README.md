@@ -87,7 +87,7 @@ Here is the Dockerfile for the Node.js app:
 # Dockerfile for Node.js To-Do App
 
 # Use an official Node.js runtime as the base image
-FROM node:16
+FROM node:22
 
 # Set the working directory inside the container
 WORKDIR /app
